@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt 2</title>
+    <link rel="stylesheet" href="css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9920ceb63a.js" crossorigin="anonymous"></script>
+</head>
+
+<header>
+
+        <i class="fa-brands fa-sistrix"></i>
+
+        <div class="header-venstre">
+            <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="logo Grønne Spor">
+            </a>
+
+
+            <a href="index.html" class="logo-tekst">
+                <p>GRØNNE SPOR</p>
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="om-os.html">Om os</a></li>
+                <li><a class="stot-her" href="#">Støt her</a></li>
+                <li><a class="active" href="kontakt.html">Kontakt</a></li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+        </nav>
+
+        <i class="fa-solid fa-bars menu-ikon"></i>
+
+    </header>
+
+    <body>
+            
+        <div class="box2"></div>
+        
+        <main class="kontaktform">
+        <h1>Kontakt os</h1>
+            <p>Har du spørgsmål, gode idéer eller ønsker du at høre mere om, hvordan du kan træffe mere miljøvenlige valg i hverdagen? Så vil vi meget gerne høre fra dig.</p>
+
+            <form>
+                <label for="navn">Navn</label>
+                <input id="navn" type="text" required>
+
+                <label for="mail">E-mail</label>
+                <input id="mail" type="email">
+
+                <label for="tel">Telefon</label>
+                <input id="tel" type="tel">
+
+                <!--Dropdown-->
+                <div class="custom-select">
+                    <label for="region">Hvad drejer henvendelsen sig om?</label>
+                    <select id="region">
+                        <option value="0" selected disabled>Vælg emne</option>
+                        <option value="1">Generelle spørgsmål</option>
+                        <option value="2">Grønne tips og råd</option>
+                        <option value="3">Samarbejdsmuligheder</option>
+                        <option value="4">Forslag og ideer</option>
+                        <option value="5">Andet</option>
+                    </select>
+                </div>
+
+                <!--checkbox af services-->
+                <label for="besked">Besked</label>
+                <textarea id="besked" cols="30" rows="10"></textarea>
+
+                <fieldset>
+                    <legend>Må vi kontakte dig på Telefon?</legend>
+
+                    <input id="ja" type="radio" name="kontakt">
+                    <label for="ja">Ja</label>
+
+                    <input id="nej" type="radio" name="kontakt">
+                    <label for="nej">Nej</label>
+                </fieldset>
+
+                <input type="submit" name="submit" value="Send besked">
+
+                <h2>Vi glæder os til at høre fra dig!</h2>
+                <p>Uanset om det er et lille spørgsmål eller en stor idé, er du altid velkommen til at kontakte os. Sammen kan vi gøre hverdagen lidt grønnere – ét skridt ad gangen.</p>
+            </form>
+       
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="img/logo hvid.png" alt="logo Grønne Spor hvidt">
+            <h5>GRØNNE SPOR</h5>
+        </div>
+
+        <nav class="footer-grid">
+            <ul class="footer-grid-1">
+                <h6>Om Grønne Spor</h6>
+                <a href="om-os.html">Om os</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="#">Støt os her</a>
+            </ul>
+
+            <ul class="footer-grid-2">
+                <h6>Udforsk</h6>
+                <a href="index.html">Forsiden</a>
+                <a href="#">Månedens favoritter</a>
+                <a href="#">En grønnere hverdag</a>
+            </ul>
+
+            <ul class="footer-grid-3">
+                <h6>Følg med</h6>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Tik Tok</a>
+            </ul>
+
+             <ul class="footer-grid-4">
+                <h6>Praktisk</h6>
+                <a href="#">Privatlivspolitik</a>
+                <a href="#">Brugervilkår</a>
+                <a href="#">Cookies</a>
+             </ul>
+        </nav>
+
+        <div class="footer-grid-5">
+                <p>© Grønne spor 2026</p>
+                <p>Vesterboulevard 74, 1400, København C</p>
+            </div>
+
+    </footer>
+        
+
+
+    </body>

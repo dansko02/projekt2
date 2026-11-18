@@ -1,0 +1,963 @@
+*{box-sizing: border-box;
+margin: 0;
+}
+
+/* General styling*/
+
+body {
+    font-family: 'Instrument sans', serif;
+}
+
+img {
+    max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    padding-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 2px 2px 7px black;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #034722;
+    padding-bottom: 1rem;
+}
+
+h3,h4,h5 {
+    font-size: 1.5rem;
+    color: #034722;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #034722;
+    font-weight: 500;
+    padding-bottom: 1rem;
+    line-height: 2rem;
+}
+
+/*Header og Nav*/
+
+.active{    /*Fremhæver hvilken side man står på i navigationen med fed skrift */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+}
+
+.header-venstre {
+    display: flex;
+    align-items: center;
+    
+}
+
+header img{
+    height: 4rem;
+    width: auto;
+}
+
+.logo-tekst{
+    text-decoration: none;
+}
+
+.logo-tekst p{
+    font-size: 1.7rem;
+    font-family: cinzel serif;
+    font-weight: bold;
+    padding-top: 1rem;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 2rem;
+    gap: 1.3rem;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #034722;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav a:hover{
+    font-weight: bold;
+}
+
+.stot-her {
+    border-width: 2px;
+    background-color: #F2D64B;
+    border-radius: 100px;
+    padding: 0.7rem 1rem;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    font-family: 'Instrument sans', serif;
+
+}
+
+.stot-her:hover{        
+    background-color: #F5ECE1;
+    color: #034722;
+    transition: 0.3s;
+}
+
+.menu-ikon{     /* Menu ikon (burger-menu) bliver kun brugt til mobil/tablet format. Er ikke funktionelt i mobil/tablet format, men er udelukkende for at give et visuelt udtryk af hvordan det ville se ud på mobil/tablet. Jeg har brugt "!important" da jeg oplevede at den blev vist alligevel selvom display er sat til "none" */
+    display: none !important;
+}
+
+.fa-sistrix{    /* Søgeikon til mobil/tablet format. Ligesom menu ikonet er det ikke fukntionelt. Sat til "!important" af samme grund som .menu-ikon */
+    display: none !important;
+}
+
+/*Hovedindhold Forsiden*/
+
+.hero img {
+    width: 100%;
+    position: relative;
+    display: block;
+}
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    padding-bottom: 6rem;
+    width: 100%;
+}
+
+.hero-text h1{
+    padding-bottom: 3rem;
+    text-shadow: 2px 2px 7px black;
+}
+
+.hero-text a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #F2D64B;
+    border-radius: 100px;
+    padding: 1.2rem 1.2rem;
+    color: black;
+    text-decoration: none;
+    box-shadow: 3px 5px 12px black;
+}
+
+.hero-text a:hover{
+    background-color: #F5ECE1;
+    color: #034722;
+    transition: 0.3s;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.box1 {
+    background-color: #034722;
+    height: 2rem;
+}
+
+.tekstafsnit1 {
+margin: 7rem 10% 0 10%;
+}
+
+.beige-afsnit-1{
+    background-color: #F5ECE1;
+    margin-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.tekstafsnit2 {
+margin: 7rem 10% 0 10%;
+padding-top: 7rem;
+}
+
+.statistik-cirkler{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 5rem;
+    margin-top: 7rem;
+    padding: 5rem 2.5rem 5rem 2.5rem;
+    border: dotted;
+    border-color: #016837;
+    border-width: 0.4rem;
+    border-radius: 20px;
+}
+
+.grøn1, .grøn2, .grøn3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.grøn1 span, .grøn2 span, .grøn3 span{
+    background-color: #016837;
+    border-radius: 50%;
+    height: 7rem;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.7rem;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+}
+
+.grøn1 p, .grøn2 p, .grøn3 p{
+    text-align: center;
+}
+
+.tekstafsnit3 {
+    margin: 7rem 10% 7rem 10%;
+}
+
+.fire-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.emne img{
+    border-radius: 1rem;
+}
+
+.emne {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    padding: 1rem 1rem;
+    border-radius: 1.5rem;
+    background-color: #F5ECE1;
+    box-shadow: 0 5px 15px rgba(88, 82, 82, 0.8);
+}
+
+.emne a{
+    text-decoration: none;
+}
+
+ .emne h3, .emne p {
+    margin-top: 1rem;
+    color: #312E25;
+}
+
+ .emne:hover{
+    transition: 0.3s;
+    background-color: #F2D64B;
+    box-shadow: 0 0 0;
+ }
+
+.læs-mere{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #312E25;
+}
+
+.læs-mere p{
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-decoration: underline;
+    color: #312E25;
+}
+
+.fa-arrow-right{
+    font-size: 2rem;
+}
+
+.beige-afsnit-2 {
+    background-color: #F5ECE1;
+    margin-top: 7rem;
+    padding-bottom: 14rem;
+}
+
+.tekstafsnit4 {
+    margin: 7rem 10rem 7rem 10rem;
+    padding-top: 7rem;
+}
+
+.fire-links-2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    gap: 2rem;
+}
+
+.fire-links-2 h3 {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+.fire-links-2 p {
+    color: white;
+    margin-top: 0.5rem;
+}
+
+.månedens-grønne-fund a, .månedens-grønne-stemme a, .månedens-læsning a, .månedens-grønne-idé a {
+    text-decoration: none;
+}
+
+.månedens-grønne-fund {
+    background-color: #012B14;
+    border-radius: 0 0 20rem 0;
+    padding: 2rem 2rem 2rem 2rem;
+    width: 80%;
+}
+
+.månedens-grønne-stemme {
+    background-color: #034722;
+    border-radius: 0 0 20rem 0;
+    padding: 2rem 2rem 2rem 2rem;
+    width: 75%;
+}
+
+.månedens-læsning {
+    background-color: #016837;
+    border-radius: 0 0 20rem 0;
+    padding: 2rem 2rem 2rem 2rem;
+    width: 70%;
+}
+
+.månedens-grønne-idé {
+    background-color: #008545;
+    border-radius: 0 0 20rem 0;
+    padding: 2rem 2rem 2rem 2rem;
+    width: 65%;
+}
+
+.månedens-grønne-fund:hover, .månedens-grønne-stemme:hover, .månedens-læsning:hover, .månedens-grønne-idé:hover {
+    box-shadow:  0 15px 20px rgba(6, 6, 6, 0.8);
+}
+
+/*Om Os side*/
+
+.box2{
+    background-color: #034722;
+    height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.om-os-grid {   /* Jeg har brugt display: grid, for at få en kolonne med emner i højre side*/
+    display: grid;
+    grid-template-columns: 2fr 0.7fr;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    gap: 1rem;
+}
+
+.hero-billede-og-tekst{
+    position: relative;
+}
+
+.hero-billede-og-tekst img{
+    width: 100%;
+    display: block;
+    border-radius: 1rem;
+    box-shadow: 0px 15px 25px rgba(42, 40, 40, 0.8);
+}
+
+.hero-billede-og-tekst h1{
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.hero-billede-og-tekst p{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 100%;
+    text-shadow: 2px 2px 7px black;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.tekstafsnit-om-os1{
+    margin-left: 2rem;
+    margin-top: 4rem;
+}
+
+.tekstafsnit-om-os1 p, .tekstafsnit-om-os2 p, .tekstafsnit-om-os3 p {
+    margin-right: 2rem;
+}
+
+.tekstafsnit-om-os2, .tekstafsnit-om-os3{
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.slut-linje{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 2rem;
+    margin-top: 3rem;
+}
+
+.slut-linje p{
+    font-weight: bolder;
+    padding-bottom: 0;
+}
+.slut-linje a{
+    text-decoration: none;
+}
+
+.til-forsiden-knap {
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 100px;
+    padding: 0.7rem 1rem;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+.til-forsiden-knap:hover{
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+.fire-links-om-os{
+    grid-column: 2;
+    grid-row: 1/7;
+    margin-bottom: 7rem;
+}
+
+.emne-om-os, .emne-om-os2, .emne-om-os3, .emne-om-os4 {
+    background-color: #eeebe3;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.emne-om-os:hover, .emne-om-os2:hover, .emne-om-os3:hover, .emne-om-os4:hover {
+    background-color: #F2D64B;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(88, 82, 82, 0.8);
+}
+
+.emne-om-os img,.emne-om-os2 img, .emne-om-os3 img, .emne-om-os4 img{
+    border-radius: 0.5rem;
+}
+
+.emne-om-os h3,.emne-om-os2 h3, .emne-om-os3 h3, .emne-om-os4 h3{
+    color: #312E25;
+    margin-top: 1rem;
+}
+
+.emne-om-os p,.emne-om-os2 p, .emne-om-os3 p, .emne-om-os4 p{
+    color: #312E25;
+}
+
+.emne-om-os a,.emne-om-os2 a, .emne-om-os3 a, .emne-om-os4 a{
+    text-decoration: none;
+}
+
+.læs-mere-om-os {
+    color: #312E25;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.læs-mere-om-os p {
+    font-size: 1.3rem;
+    text-decoration: underline;
+    color: #312E25;
+    font-weight: bold;
+    padding-bottom: 0;
+}
+
+/*Råd mod madspild side*/
+
+.box3{
+    background-color: #034722;
+    height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.madspild-intro-tekst{
+    background-color: #eeebe3;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.madspild-intro-tekst h1, .madspild-intro-tekst p{
+    color: #034722;
+    margin-left: 10%;
+}
+
+.madspild-intro-tekst h1{
+    font-size: 3rem;
+    text-shadow: 0px 0px 0px black;
+}
+
+.madspild-intro-tekst p{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.madspild-intro-tekst img{
+    margin-right: 10%;
+    height: 20rem;
+}
+
+.råd-imod-madspild{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+    gap: 5rem;
+    margin-top: 14rem;
+    margin-bottom: 14rem;
+}
+
+.råd-imod-madspild-tekstfelt{
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    background-color: #eeebe3;
+    border-radius: 2rem;
+}
+
+.råd-imod-madspild-tekstfelt h2, .råd-imod-madspild-tekstfelt p{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.råd-imod-madspild-tekstfelt h2{
+    padding-top: 2rem;
+}
+
+.råd-imod-madspild-tekstfelt img{
+    grid-column: 2;
+    grid-row: 1/4;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.madspild-beige-afsnit{
+    background-color: #eeebe3;
+}
+
+.madspild-beige-tekst{
+    margin-left: 10rem;
+    padding-top: 7rem;
+}
+
+.madspild-læs-også-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.madspild-læs-også{
+    background-color: white;
+    border-radius: 15px;
+    width: 35rem;
+    margin-top: 5rem;
+    margin-bottom: 7rem;
+}
+
+.madspild-læs-også:hover{
+    background-color: #F2D64B;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(88, 82, 82, 0.8);
+}
+
+.madspild-læs-også img{
+    border-radius: 1.5rem;
+    padding: 1rem;
+}
+
+.madspild-læs-også h4, .madspild-læs-også p{
+    padding: 0.3rem 1.5rem;
+    color: #312E25;
+    text-decoration: none;
+}
+
+.madspild-læs-også a{
+    text-decoration: none;
+}
+
+.læs-mere-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #312E25;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.læs-mere-2 p{
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+
+/*Kontakt os side*/
+
+.kontaktform {
+  border-radius: 5px;
+  background-color: #eeebe3;
+  padding: 1.3em;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 7rem;
+}
+
+input[type=text], input[type=email], input[type=tel], select, textarea{
+	width: 100%;
+	padding: 1em;
+	border: 1px solid grey;
+	border-radius: 5px;
+	margin-top: 0.5em;
+	margin-bottom: 2em;
+}
+
+select, input[type=radio], input[type=submit]{
+	cursor: pointer;
+}
+
+fieldset{
+	border-color: #034722;
+	border-style: dotted;
+	margin-bottom: 2em;
+}
+
+input[type=submit]{
+	background-color: #034722;
+	color: white;
+	padding: 0.8em 1.5em;
+	border: none;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 18px;
+}
+
+.kontaktform h1{
+    color: #034722;
+    text-shadow: 0px 0px 0px black;
+}
+
+.kontaktform h2{
+    color: #034722;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+input[type=submit]:hover{
+	background-color: white;
+	color: #034722;
+	transition: 0.3s;
+}
+
+.kontaktform p{
+    margin-bottom: 1.5em;
+}
+
+input[type=radio]{
+    margin-left: 1rem;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #034722;
+    margin-top: 7rem;
+}
+
+footer img{
+    width: 5rem;
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 2rem;
+    padding-top: 5rem;
+}
+
+.footer-logo h5 {
+    color: white;
+    font-family: cinzel serif;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.footer-grid a {
+    color: white;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer-grid h6 {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.footer-grid-1, .footer-grid-2, .footer-grid-3, .footer-grid-4  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-grid-5 {
+    display: flex;
+    gap: 10rem;
+    margin-left: 11rem;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.footer-grid-5 p {
+    color: white;
+    font-size: 1rem;
+}
+
+footer nav a:hover{
+    color: black;
+    font-weight: 500;
+}
+
+/*Mobil og Tablet version*/
+
+@media screen and (max-width: 769px){
+
+/*Header og nav*/
+
+.fa-sistrix, .menu-ikon{    /* display sat til "block" så ikonerne bliver vist*/
+    display: block !important;
+    font-size: 3rem;
+    color: #034722;
+}
+
+header {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+header img {
+    height: 5rem;
+}
+
+.logo-tekst {
+    display: none;
+}
+
+nav {
+    display: none;
+}
+
+
+/*Hovedindhold Forside*/
+.hero {
+    position: relative;
+}
+
+.hero img{
+    min-height: 500px;
+    object-fit: cover;
+}
+
+.hero-text a{
+    display: inline-flex;
+    font-size: 1.5rem;
+}
+
+.hero h1{
+    font-size: 2rem;
+}
+
+.tekstafsnit1, .tekstafsnit2, .tekstafsnit3, .tekstafsnit4 {
+margin: 5rem 2rem 5rem 2rem;
+}
+
+.statistik-cirkler{
+    flex-direction: column;
+    gap: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.emne {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.fire-links-2 {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: 0;
+}
+
+.månedens-grønne-fund, .månedens-grønne-stemme, .månedens-læsning, .månedens-grønne-idé{
+    border-radius: 100px;
+    width: 90%;
+}
+
+/*Om os siden*/
+
+.om-os-grid {
+    grid-template-columns: 1fr;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    gap: 1rem;
+}
+
+.fire-links-om-os{
+    grid-column: 1;
+    grid-row: 6;
+    margin-bottom: 7rem;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.slut-linje{
+    flex-direction: column;
+}
+
+.om-os-grid {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.hero-billede-og-tekst img{
+    border-radius: 0;
+    min-height: 500px;
+    object-fit: cover;
+}
+
+.hero-billede-og-tekst h1{
+    top: 40%;
+    left: 50%;
+    font-size: 2rem;
+}
+
+.hero-billede-og-tekst p{
+    top: 60%;
+    left: 50%;
+    font-size: 2rem;
+}
+
+.slut-linje{
+    margin-right: 2rem;
+}
+
+/*Undgå madspild side*/
+
+.madspild-intro-tekst h1, .madspild-intro-tekst p{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.madspild-intro-tekst img{
+    margin-right: 0;
+    width: 100%;
+    height: auto;
+}
+
+.madspild-intro-tekst{
+    flex-direction: column;
+}
+
+.råd-imod-madspild{
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-top: 7rem;
+}
+
+.råd-imod-madspild-tekstfelt{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.råd-imod-madspild-tekstfelt img{
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-top: 2rem;
+}
+
+.madspild-beige-tekst{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 5rem;
+}
+
+.madspild-læs-også-grid {
+    flex-direction: column;
+    align-items: center;
+}
+
+.madspild-læs-også{
+    width: 90%;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+}
+
+
+/*Kontakt os side*/
+.kontaktform{
+   width: 90%;
+}
+
+/*Footer*/
+.footer-grid {
+    display: grid;
+    margin-left: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.footer-grid-5 {
+    display: flex;
+    gap: 2rem;
+    margin-left: 2rem;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.footer-logo{
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 0;
+}
+}
